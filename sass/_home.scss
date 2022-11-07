@@ -37,7 +37,7 @@
 .content-home {
     .home-info {
         position: relative;
-        background-image: url('../images/actualites-bg.jpg');
+        background-image: url('../images/background-main.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         &-body {
@@ -130,7 +130,7 @@
             }
         }
         &-image {
-            background-image: url('../images/bg5.png');
+            background-image: url('../images/background-home-2.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -139,7 +139,7 @@
     .home-brand {
         position: relative;
         &-image {
-            background-image: url('../images/global-02.png');
+            background-image: url('../images/background-home-3.png');
             background-repeat: no-repeat;
             background-position: right;
         }
@@ -180,14 +180,11 @@
     .home-contact {
         position: relative;
         &-image {
-            background-image: url('../images/bannercontact.jpg');
+            background-image: url('../images/banner-contact-home.jpg');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
-            &__mobile {
-                // display: none;
-            }
         }
         .home-contact-btn {
             position: absolute;

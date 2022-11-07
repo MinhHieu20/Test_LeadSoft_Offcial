@@ -390,7 +390,7 @@ img {
 
 .content-home .home-info {
   position: relative;
-  background-image: url("../images/actualites-bg.jpg");
+  background-image: url("../images/background-main.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -471,7 +471,7 @@ img {
   visibility: visible;
 }
 .content-home .home-industries-image {
-  background-image: url("../images/bg5.png");
+  background-image: url("../images/background-home-2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -480,7 +480,7 @@ img {
   position: relative;
 }
 .content-home .home-brand-image {
-  background-image: url("../images/global-02.png");
+  background-image: url("../images/background-home-3.png");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -520,7 +520,7 @@ img {
   position: relative;
 }
 .content-home .home-contact-image {
-  background-image: url("../images/bannercontact.jpg");
+  background-image: url("../images/banner-contact-home.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -918,7 +918,7 @@ img {
   height: 65.3rem;
 }
 .content-contact-image {
-  background-image: url(../images/actualites-bg.jpg);
+  background-image: url(../images/background-main.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
