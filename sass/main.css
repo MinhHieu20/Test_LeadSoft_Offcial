@@ -94,8 +94,6 @@ video {
   font: inherit;
   vertical-align: baseline;
   outline: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -264,25 +262,38 @@ img {
   z-index: 10;
   opacity: 0.9;
   bottom: 0;
-  animation: animateWave 4s linear infinite;
+  -webkit-animation: animateWave 4s linear infinite;
+          animation: animateWave 4s linear infinite;
 }
 .footer #wave2 {
   z-index: 9;
   opacity: 0.5;
   bottom: 1rem;
-  animation: animateWave_02 4s linear infinite;
+  -webkit-animation: animateWave_02 4s linear infinite;
+          animation: animateWave_02 4s linear infinite;
 }
 .footer #wave3 {
   z-index: 9;
   opacity: 0.2;
   bottom: 1.5rem;
-  animation: animateWave_02 3s linear infinite;
+  -webkit-animation: animateWave_02 3s linear infinite;
+          animation: animateWave_02 3s linear infinite;
 }
 .footer #wave4 {
   z-index: 9;
   opacity: 0.7;
   bottom: 2rem;
-  animation: animateWave_02 3s linear infinite;
+  -webkit-animation: animateWave_02 3s linear infinite;
+          animation: animateWave_02 3s linear infinite;
+}
+
+@-webkit-keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
 }
 
 @keyframes animateWave {
@@ -291,6 +302,14 @@ img {
   }
   100% {
     background-position-x: 0px;
+  }
+}
+@-webkit-keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
   }
 }
 @keyframes animateWave_02 {
@@ -703,8 +722,23 @@ img {
   padding-bottom: 19.9rem;
   width: 100% !important;
 }
-.content-service-item__image img {
+.content-service-item__box {
+  display: flex;
+}
+.content-service-item__image {
+  overflow: hidden;
   border-radius: 1.5rem;
+  cursor: pointer;
+  height: 36rem;
+}
+.content-service-item__image img {
+  transition: all 0.9s;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+}
+.content-service-item__image:hover img {
+  transform: scale(1.2);
 }
 .content-service-item__info--heading {
   font-style: normal;
@@ -1406,7 +1440,8 @@ img {
     z-index: 12;
     background-color: #383838;
     width: 80%;
-    animation: shownav ease 0.6s;
+    -webkit-animation: shownav ease 0.6s;
+            animation: shownav ease 0.6s;
   }
   .header-body-menu__item--link {
     color: #fff;
@@ -1437,6 +1472,16 @@ img {
   }
   .header .mobile-menu-overlay.show {
     display: none;
+  }
+  @-webkit-keyframes shownav {
+    from {
+      opacity: 0;
+      transform: translateX(-65%);
+    }
+    to {
+      opacity: 1;
+      transform: 0;
+    }
   }
   @keyframes shownav {
     from {
@@ -1912,11 +1957,9 @@ img {
     margin: 0 1.5rem;
     text-align: justify;
   }
-
   .content-home .home-map {
     margin-top: 10rem;
   }
-
 }
 @media (min-width: 360px) and (max-width:739px) {
   .service-navigation {
@@ -2052,7 +2095,8 @@ img {
   background: #fff;
   margin: 0 auto;
   position: relative;
-  animation: modalFaceIn ease 0.6s;
+  -webkit-animation: modalFaceIn ease 0.6s;
+          animation: modalFaceIn ease 0.6s;
   min-height: 20rem;
 }
 .modal-recruit-container__close {
@@ -2104,6 +2148,17 @@ img {
 }
 .modal-recruit.visible {
   display: flex;
+}
+
+@-webkit-keyframes modalFaceIn {
+  from {
+    opacity: 0;
+    transform: translateY(-14rem);
+  }
+  to {
+    opacity: 1;
+    transform: 0;
+  }
 }
 
 @keyframes modalFaceIn {
