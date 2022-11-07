@@ -11,13 +11,13 @@
             text-align: center;
         }
         &-outside{
-            width: 45rem;
+            width: 100%;
             height: 81.5rem;
             padding: 3.2rem 2.3rem;
             &__top{
                 padding: 0 0 4.1rem 0;
                 span{
-                    width: 90%;
+                    width: 100%;
                     img{
                         width: 0.9rem;
                         height: 1.5rem;
@@ -25,25 +25,9 @@
                         margin-top: 0.5rem;
                     }
                 }
-                &__info{
-                    width: 100%;
-                    &--list {
-                        &-item {
-                            margin-bottom: 0.5rem;
-                        }
-                    }
-                }
-                &__btn{
-                    width: 16.5rem;
-                    height: 4.8rem;
-                    font-size: 1.8rem;
-                    line-height: 2.5em;
-                    left: 0; 
-                    right: 0; 
-                    margin: 2.2 auto;
                 &--btn{
                     right: 0;
-                    bottom: 1rem;
+                    bottom: 1.6rem;
                 }
             }
             &__info{
@@ -61,10 +45,7 @@
                 line-height: 2.5em;
                 left: 0; 
                 right: 0; 
-                margin-left: auto; 
-                margin-right: auto; 
-                margin-top: 2.2rem;
-                margin-bottom: 2.2rem;
+                margin: 2.2rem auto;
             }
         }
         &-outside:last-child{ 
@@ -75,7 +56,7 @@
         }
     }
 }
-}
+
 @include responsive-tablet{
     .content-recruit{
         &-image {
