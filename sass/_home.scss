@@ -1,0 +1,245 @@
+@import 'variables';
+.banner-home {
+    position: relative;
+    &-outside {
+        &__image1 {
+            background-image: url('../images/bannerhome2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &__image2 {
+            background-image: url('../images/bannerhome1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    &-heading {
+        position: absolute;
+        font-family: Roboto-Bold;
+        color: $white;
+    }
+    &-text {
+        position: absolute;
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        color: $white;
+    }
+    &-btn {
+        position: absolute;
+        font-weight: 700;
+        a {
+            display: flex;
+            align-items: center;
+            color: $white;
+        }
+    }
+}
+.content-home {
+    .home-info {
+        position: relative;
+        background-image: url('../images/actualites-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        &-body {
+            &__title {
+                font-size: 4.2rem;
+                color: $main;
+                text-transform: uppercase;
+            }
+            &__text {
+                
+                text-align: justify;
+            }
+            &__list {
+                display: flex;
+                flex-wrap: wrap;
+                &-item {
+                    &--right {
+                        &-heading {
+                            font-size: 1.8rem;
+                            line-height: 2.1rem;
+                            font-weight: 700;
+                            color: $main;
+                        }
+                        &-text {
+                            color: $color-text;
+                            font-size: 1.8rem;
+                            line-height: 2.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .home-industries {
+        position: relative;
+        &-body {
+            &__title {
+                font-size: 4.2rem;
+                line-height: 4.9rem;
+                color: $white;
+                position: relative;
+                span {
+                    position: absolute;
+                    border-bottom: 0.4rem solid $main;
+                }
+            }
+            &__list {
+                .slick-track {
+                    display: flex;
+                    justify-content: center;
+                }
+                &-item {
+                    background: #FF7E07;
+                    border: 3px solid $white;
+                    border-radius: 15px;
+                    text-align: center;
+                    cursor: pointer;
+                    &--image {
+                        transition: 1s ease-in-out;
+                    }
+                    &--heading {
+                        font-size: 1.8rem;
+                        line-height: 2.1rem;
+                        color: $white;
+                        transition: 1s ease-in-out;
+                    }
+                    &--text {
+                        font-size: 1.6rem;
+                        line-height: 2.1rem;
+                        color: $white;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: 0.5s;
+                    }
+                }
+                &-item:hover { 
+                    .home-industries-body__list-item--image {
+                        transform: translateY(-30px);
+                    }
+                    .home-industries-body__list-item--heading {
+                        transform: translateY(-51px);
+                    }
+                    p {
+                        margin-top: -5rem;
+                        transition-delay: 0.2s;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+        &-image {
+            background-image: url('../images/bg5.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    .home-brand {
+        position: relative;
+        &-image {
+            background-image: url('../images/global-02.png');
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        &-body {
+            text-align: right;
+            &__title {
+                font-size: 3.8rem;
+                line-height: 4.5rem;
+                color: #141414;
+            }
+            &__text {
+                font-size: 3.1rem;
+                line-height: 4.5rem;
+                color: $main;
+            }
+            &__list {
+                display: flex;
+                justify-content: flex-end;
+                justify-content: space-between;
+                &-item {
+                    display: flex;
+                    .count {
+                        font-size: 3rem;
+                        line-height: 4.9rem;
+                        color: $main;
+                    }
+                    &--heading {
+                        color: #394244;
+                        
+                        span {
+                            color: $main;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .home-contact {
+        position: relative;
+        &-image {
+            background-image: url('../images/bannercontact.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            &__mobile {
+                // display: none;
+            }
+        }
+        .home-contact-btn {
+            position: absolute;
+            font-weight: 700;
+            background-color: $white;
+            font-size: 2.4rem;
+            a {
+                display: flex;
+                align-items: center;
+                color: $main;
+            }
+        }
+    }
+    .home-reason {
+        text-align: center;
+        &-title {
+            color: #030303;
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+            span {
+                display: block;
+                font-weight: 700;
+                color: $main;
+                font-size: 4.2rem;
+            }
+        }
+        &-text {
+            color: #6d6d6d;
+            font-size: 2rem;
+            span {
+                display: block;
+                font-size: 2.4rem;
+            }
+        }
+        &-list {
+            &__item {
+                &--heading {
+                    text-align: center;
+                    line-height: 3.5rem;
+                }
+                &--text {
+                    color: #6d6d6d;
+                    font-size: 2.4rem;
+                    line-height: 2.8rem;
+                }
+            }
+        }
+    }
+    .home-map{
+        iframe{
+            width: 100%;
+            height: 40rem;
+        }
+    }
+}
