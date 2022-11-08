@@ -94,6 +94,8 @@ video {
   font: inherit;
   vertical-align: baseline;
   outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -259,38 +261,25 @@ img {
   z-index: 10;
   opacity: 0.9;
   bottom: 0;
-  -webkit-animation: animateWave 4s linear infinite;
-          animation: animateWave 4s linear infinite;
+  animation: animateWave 4s linear infinite;
 }
 .footer #wave2 {
   z-index: 9;
   opacity: 0.5;
   bottom: 1rem;
-  -webkit-animation: animateWave_02 4s linear infinite;
-          animation: animateWave_02 4s linear infinite;
+  animation: animateWave_02 4s linear infinite;
 }
 .footer #wave3 {
   z-index: 9;
   opacity: 0.2;
   bottom: 1.5rem;
-  -webkit-animation: animateWave_02 3s linear infinite;
-          animation: animateWave_02 3s linear infinite;
+  animation: animateWave_02 3s linear infinite;
 }
 .footer #wave4 {
   z-index: 9;
   opacity: 0.7;
   bottom: 2rem;
-  -webkit-animation: animateWave_02 3s linear infinite;
-          animation: animateWave_02 3s linear infinite;
-}
-
-@-webkit-keyframes animateWave {
-  0% {
-    background-position-x: 100rem;
-  }
-  100% {
-    background-position-x: 0;
-  }
+  animation: animateWave_02 3s linear infinite;
 }
 
 @keyframes animateWave {
@@ -299,14 +288,6 @@ img {
   }
   100% {
     background-position-x: 0;
-  }
-}
-@-webkit-keyframes animateWave_02 {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: 100rem;
   }
 }
 @keyframes animateWave_02 {
@@ -570,6 +551,30 @@ img {
   font-family: Roboto-Regular;
   src: url("../font/Roboto-Regular.ttf");
 }
+.base-banner .banner-product-text, .base-banner .banner-product-heading, .base-banner .banner-product-info {
+  position: absolute;
+  color: #fff;
+  font-family: Roboto-Regular;
+  margin-left: 10.5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.base-banner .banner-product-text {
+  font-size: 2.8rem;
+  line-height: 2.8rem;
+  margin-top: -6.2rem;
+}
+.base-banner .banner-product-heading {
+  font-size: 4.2rem;
+  line-height: 4.9rem;
+  text-transform: uppercase;
+}
+.base-banner .banner-product-info {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  margin-top: 6.2rem;
+}
+
 .content-product .product-outside {
   margin: 11rem 0 10.4rem;
   font-family: Roboto-Bold;
@@ -657,6 +662,25 @@ img {
   border-radius: 0.5rem;
   margin-left: 4rem;
   border: none;
+}
+
+.base-banner .banner-service-heading, .base-banner .banner-service-text {
+  position: absolute;
+  color: #fff;
+  font-family: Roboto-Regular;
+  margin-left: 10.5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.base-banner .banner-service-heading {
+  font-size: 4.2rem;
+  line-height: 4.9rem;
+  text-transform: uppercase;
+}
+.base-banner .banner-service-text {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  margin-top: 6.2rem;
 }
 
 .service-navigation {
@@ -1040,6 +1064,24 @@ img {
   }
 }
 @media (min-width: 360px) and (max-width:739px) {
+  .base-banner .banner-product-text, .base-banner .banner-product-heading, .base-banner .banner-product-info {
+    margin-left: 5.5%;
+    top: 45%;
+  }
+  .base-banner .banner-product-text {
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+    margin-top: -4.2rem;
+  }
+  .base-banner .banner-product-heading {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  .base-banner .banner-product-info {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    margin-top: 5.2rem;
+  }
   .content-product .product-outside {
     margin: 5rem 0 5rem;
   }
@@ -1113,6 +1155,15 @@ img {
   }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
+  .base-banner .banner-product-text {
+    font-size: 2rem;
+  }
+  .base-banner .banner-product-heading {
+    font-size: 3.2rem;
+  }
+  .base-banner .banner-product-info {
+    font-size: 1.8rem;
+  }
   .content-product .product-outside {
     margin: 5rem 0 5rem;
   }
@@ -1431,8 +1482,7 @@ img {
     z-index: 12;
     background-color: #383838;
     width: 80%;
-    -webkit-animation: shownav ease 0.6s;
-            animation: shownav ease 0.6s;
+    animation: shownav ease 0.6s;
   }
   .header-body-menu__item--link {
     color: #fff;
@@ -1464,16 +1514,6 @@ img {
   .header .mobile-menu-overlay.show {
     display: block;
   }
-  @-webkit-keyframes shownav {
-    from {
-      opacity: 0;
-      transform: translateX(-65%);
-    }
-    to {
-      opacity: 1;
-      transform: translate(0);
-    }
-  }
   @keyframes shownav {
     from {
       opacity: 0;
@@ -1499,8 +1539,7 @@ img {
 @media (min-width: 740px) and (max-width: 1023px) {
   .banner-home-outside__image1, .banner-home-outside__image2 {
     height: 50rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .banner-home-heading {
     top: 40%;
@@ -1972,6 +2011,22 @@ img {
   }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
+  .base-banner {
+    position: relative;
+  }
+  .base-banner .banner-service-heading, .base-banner .banner-service-text {
+    margin-left: 5.5%;
+    top: 45%;
+  }
+  .base-banner .banner-service-heading {
+    font-size: 3.2rem;
+    line-height: 3rem;
+  }
+  .base-banner .banner-service-text {
+    font-size: 2rem;
+    line-height: 2.1rem;
+    margin-top: 4.2rem;
+  }
   .service-navigation {
     height: 6rem;
   }
@@ -2019,6 +2074,22 @@ img {
   }
 }
 @media (min-width: 360px) and (max-width:739px) {
+  .base-banner {
+    position: relative;
+  }
+  .base-banner .banner-service-heading, .base-banner .banner-service-text {
+    margin-left: 5.5%;
+    top: 45%;
+  }
+  .base-banner .banner-service-heading {
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
+  .base-banner .banner-service-text {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    margin-top: 4.2rem;
+  }
   .service-navigation {
     display: none;
   }
@@ -2153,8 +2224,7 @@ img {
   background: #fff;
   margin: 0 auto;
   position: relative;
-  -webkit-animation: modalFaceIn ease 0.6s;
-          animation: modalFaceIn ease 0.6s;
+  animation: modalFaceIn ease 0.6s;
   min-height: 20rem;
   width: 60.7rem;
 }
@@ -2233,8 +2303,7 @@ img {
   min-height: 60.38rem;
   width: 60.38rem;
   position: relative;
-  -webkit-animation: modalFaceIn ease 0.6s;
-          animation: modalFaceIn ease 0.6s;
+  animation: modalFaceIn ease 0.6s;
   border-radius: 1rem;
 }
 .modal-map-address__close .close-icon {
@@ -2257,17 +2326,6 @@ img {
 }
 .modal-map.visible {
   display: flex;
-}
-
-@-webkit-keyframes modalFaceIn {
-  from {
-    opacity: 0;
-    transform: translateY(-14rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 @keyframes modalFaceIn {
@@ -2330,6 +2388,7 @@ img {
   }
   .base-banner {
     height: 51.3rem;
+    position: relative;
   }
   .modal-recruit .form-contact {
     padding: 0;

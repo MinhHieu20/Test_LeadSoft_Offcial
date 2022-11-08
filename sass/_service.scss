@@ -1,4 +1,27 @@
 @import 'variables';
+.base-banner {
+    .banner-service {
+        &-heading,
+        &-text {
+            position: absolute;
+            color: $white;
+            font-family: Roboto-Regular;
+            margin-left: 10.5%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &-heading {
+            font-size: 4.2rem;
+            line-height: 4.9rem;
+            text-transform: uppercase;
+        }
+        &-text {
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+            margin-top: 6.2rem;
+        }
+    }
+}
 .service-navigation {
     background: $main;
     height: 6rem;

@@ -1,9 +1,24 @@
 @import 'variables';
-
-@include responsive_tablet-mobile { 
-
-}
 @include responsive_tablet {
+    .base-banner {
+        position: relative;
+        .banner-service {
+            &-heading,
+            &-text {
+                margin-left: 5.5%;
+                top: 45%;
+            }
+            &-heading {
+                font-size: 3.2rem;
+                line-height: 3rem;
+            }
+            &-text {
+                font-size: 2rem;
+                line-height: 2.1rem;
+                margin-top: 4.2rem;
+            }
+        }
+    }
     .service-navigation {
         height: 6rem;
         &-list {
@@ -63,6 +78,25 @@
     }
 }
 @include responsive_mobile {
+    .base-banner {
+        position: relative;
+        .banner-service {
+            &-heading,
+            &-text {
+                margin-left: 5.5%;
+                top: 45%;
+            }
+            &-heading {
+                font-size: 2.6rem;
+                line-height: 3rem;
+            }
+            &-text {
+                font-size: 1.8rem;
+                line-height: 2.1rem;
+                margin-top: 4.2rem;
+            }
+        }
+    }
     .service-navigation {
         display: none;
     }
@@ -98,7 +132,4 @@
             }
         }
     }
-}
-@include responsive_pc {
-
 }
