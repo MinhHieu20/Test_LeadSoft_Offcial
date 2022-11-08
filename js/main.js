@@ -83,7 +83,7 @@ $(document).ready(function(){
     $('.base-partner-list').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2000,
         prevArrow:"<i class='trademark-left fa fa-angle-left' aria-hidden='true'></i>",
         nextArrow:"<i class='trademark-right fa fa-angle-right' aria-hidden='true'></i>",
@@ -91,7 +91,7 @@ $(document).ready(function(){
           {
             breakpoint: 1366,
             settings: {
-              slidesToShow: 4,
+              slidesToShow: 5,
               slidesToScroll: 2,
               infinite: true,
             }
@@ -99,7 +99,7 @@ $(document).ready(function(){
           {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 3,
+              slidesToShow:3,
               slidesToScroll: 2,
               infinite: true,
             }
@@ -107,7 +107,7 @@ $(document).ready(function(){
           {
             breakpoint: 992,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 3,
               slidesToScroll: 2,
               infinite: true,
             }

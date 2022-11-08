@@ -998,7 +998,7 @@ img {
 .contact-industries-heading {
   font-weight: 400;
   font-size: 4.2rem;
-  list-style: 4.9rem;
+  line-height: 4.9rem;
   color: #000;
   margin-bottom: 5.6rem;
 }
@@ -1388,6 +1388,17 @@ img {
     margin: 0 auto;
     margin-bottom: 5.7rem;
   }
+  .contact-industries-heading {
+    font-size: 3.6rem;
+    text-align: center;
+  }
+  .contact-industries-name {
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  .box-center-item {
+    margin-bottom: 5rem;
+  }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
   .content-contact-box {
@@ -1402,6 +1413,9 @@ img {
   }
   .content-contact-box__mobile {
     display: none;
+  }
+  .box-center-item {
+    margin-bottom: 5rem;
   }
 }
 @media (min-width:1024px) {
@@ -1989,6 +2003,9 @@ img {
 .base-partner-list {
   position: relative;
 }
+.base-partner-list__item {
+  text-align: center;
+}
 
 .trademark-left {
   cursor: pointer;
@@ -2191,10 +2208,13 @@ img {
     margin-top: 11.4rem;
   }
   .base-partner-list__item .margin-image-golfzon {
-    margin-top: 3rem;
+    margin-top: 2.6rem;
   }
   .base-partner-list__item .margin-image-unicidex {
-    margin-top: 6.8em;
+    margin-top: 6.3em;
+  }
+  .base-partner-list__item .margin-image-aia {
+    margin-top: 2.2rem;
   }
   .base-banner {
     height: 51.3rem;
@@ -2235,17 +2255,25 @@ img {
 }
 @media (min-width: 740px) and (max-width: 1023px) {
   .base-partner {
-    margin-top: 6.4rem !important;
-    margin-bottom: 16rem;
+    margin: 10rem auto;
+    width: 80%;
+  }
+  .base-partner-list {
+    line-height: 17rem;
   }
   .base-partner-list__item {
     text-align: center;
   }
+  .base-partner-list__item--link {
+    width: 18rem;
+  }
   .trademark-left {
-    left: -3% !important;
+    left: -6% !important;
+    font-size: 6rem;
   }
   .trademark-right {
-    right: -3% !important;
+    right: -6% !important;
+    font-size: 6rem;
   }
 }
 @media (min-width: 360px) and (max-width:739px) {
@@ -2293,17 +2321,20 @@ img {
   .base-partner-heading__text {
     font-size: 2.8rem !important;
   }
-  .trademark-right {
-    display: none !important;
-  }
-  .trademark-left {
-    display: none !important;
+  .base-partner-list {
+    line-height: 9rem;
   }
   .base-partner-list__item {
     text-align: center;
   }
   .base-partner-list__item--link {
     width: 14rem;
+  }
+  .trademark-right {
+    display: none !important;
+  }
+  .trademark-left {
+    display: none !important;
   }
   .slick-dots {
     display: flex !important;
