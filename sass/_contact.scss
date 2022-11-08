@@ -9,20 +9,22 @@
         -o-object-fit: cover;
         object-fit: cover;
         height: 65.3rem;
-        &__title{
-            padding-top: 12.2rem;
-            line-height: 4.9rem;
-            font-size: 4.2rem;
-            font-weight: 700;
-            color: $white;
-        }
-        &__sub{
-            margin-top: 2rem;
-            font-size: 2rem;
-            font-weight: 700;
-            line-height: 2.3rem;
-            color: $white;
-            width: 50%;
+        &__wrap{
+            &--title{
+                padding-top: 12.2rem;
+                line-height: 4.9rem;
+                font-size: 4.2rem;
+                font-weight: 700;
+                color: $white;
+            }
+            &--sub{
+                margin-top: 2rem;
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 2.3rem;
+                color: $white;
+                width: 50%;
+            }
         }
     }
     &-image{
