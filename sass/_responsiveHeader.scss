@@ -5,7 +5,7 @@
     .header {
         &-body {
             &-menu {
-                display: block;
+                display: none;
                 position: fixed;
                 top: 0;
                 left: 0;
@@ -24,7 +24,7 @@
                 }
             }
             &-menu.show { 
-                display: none;
+                display: block;
             }
         }
         .navbar-mobile {
@@ -41,12 +41,12 @@
         .mobile-menu-overlay {
             position: absolute;
             inset: 0;
-            display: block;
+            display: none;
             background: rgba(0, 0, 0, 0.5);
             z-index: 11;
         }
         .mobile-menu-overlay.show {
-            display: none;
+            display: block;
         }
         @keyframes shownav {
             from {

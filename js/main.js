@@ -97,6 +97,14 @@ $(document).ready(function(){
             }
           },
           {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow:4,
+              slidesToScroll: 2,
+              infinite: true,
+            }
+          },
+          {
             breakpoint: 1024,
             settings: {
               slidesToShow:3,
@@ -168,16 +176,16 @@ $(document).ready(function(){
     $('.js-moblie-navbar').click(function() { 
       $('.js-mobile-menu').toggleClass('show'); 
       $('.mobile-menu-overlay').toggleClass('show');  
-      if($('.js-mobile-menu').hasClass('show') === true) {
+      if($('.js-mobile-menu').hasClass('show') === false) {
         $('.navbar-mobile').css("color", "#000")
       } else { 
         $('.navbar-mobile').css("color", "#fff")
       }
     })
     $(".mobile-menu-overlay").click(function() {
-      $('.js-mobile-menu').addClass('show'); 
+      $('.js-mobile-menu').removeClass('show'); 
       $('.mobile-menu-overlay').toggleClass('show');
-      if($('.js-mobile-menu').hasClass('show') === true) {
+      if($('.js-mobile-menu').hasClass('show') === false) {
         $('.navbar-mobile').css("color", "#000")
       } else { 
         $('.navbar-mobile').css("color", "#fff")
@@ -198,7 +206,7 @@ $(document).ready(function(){
           }
         },
         {
-          breakpoint: 481,
+          breakpoint: 740,
           settings: {
             slidesToShow: 1,
             autoplaySpeed: 3000,
@@ -233,7 +241,11 @@ $(document).ready(function(){
       prevArrow: true,
       responsive: [
         {
-          breakpoint: 481,
+          breakpoint: 9999,
+          settings: "unslick"
+        },
+        {
+          breakpoint: 740,
           settings: {
             slidesToShow: 1,
             autoplaySpeed: 3000,
