@@ -1,6 +1,6 @@
 @include responsive_mobile{
     .wrap-footer{
-        min-height:116vh;
+        min-height:90vh;
     }
     .footer{
         &-logo {
@@ -31,5 +31,10 @@
                 margin-top: 1.2rem;
             }
         }
+    }
+}
+@include responsive-tablet{
+    .wrap-footer{
+        min-height: 80vh;
     }
 }
