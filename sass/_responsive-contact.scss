@@ -17,7 +17,19 @@
             margin-bottom: 5.7rem;
         }
     }
-    
+    .contact-industries{
+        &-heading{
+            font-size: 3.6rem;
+            text-align: center;
+        }
+        &-name{
+            margin-top: 1rem;
+            margin-bottom: 1.2rem;
+        }
+    }
+    .box-center-item{
+        margin-bottom: 5rem;
+    }
 }
 
 @include responsive-tablet{
@@ -35,6 +47,9 @@
         &__mobile{
             display: none;
         }
+    }
+    .box-center-item{
+        margin-bottom: 5rem;
     }
 }
 
