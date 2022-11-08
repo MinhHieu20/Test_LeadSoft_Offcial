@@ -83,7 +83,7 @@ $(document).ready(function(){
     $('.base-partner-list').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
         prevArrow:"<i class='trademark-left fa fa-angle-left' aria-hidden='true'></i>",
         nextArrow:"<i class='trademark-right fa fa-angle-right' aria-hidden='true'></i>",
