@@ -469,7 +469,6 @@ img {
 }
 .content-home .home-brand-body__list {
   display: flex;
-  justify-content: flex-end;
   justify-content: space-between;
 }
 .content-home .home-brand-body__list-item {
@@ -758,6 +757,7 @@ img {
   height: 128.6rem;
   position: absolute;
   left: -1rem;
+  bottom: -42rem;
 }
 .content-recruit-title {
   display: block;
@@ -1499,6 +1499,7 @@ img {
   }
   .content-home .home-brand-image .home-brand-body__list {
     margin-top: 2rem;
+    flex-wrap: wrap;
   }
   .content-home .home-brand-image .home-brand-body__list-item {
     display: flex;
