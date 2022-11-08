@@ -153,3 +153,8 @@ img {
   border-radius: 1.5rem;
   border: none;
 }
+
+.slick-next,
+.slick-prev{
+  display: none !important;
+}

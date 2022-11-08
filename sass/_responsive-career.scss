@@ -3,6 +3,18 @@
         padding: 0 1.5rem;
         &-image {
             right: -73rem;
+            &__top{
+                width: 54.7rem;
+                height: 57.6rem;
+                right: -20rem;
+            }
+            &__bottom{
+                width: 54.7rem;
+                height: 57.6rem;
+                left: -15rem;
+                transform: rotate(26deg);
+                bottom: 20rem;
+            }
         }
         &-title{
             width: 86%;
@@ -47,8 +59,8 @@
             }
         }
         &-outside:last-child{ 
-            margin-bottom: 6rem;
-            width: 100%;
+            margin-bottom: 2rem;
+            width: 97%;
             height: 100%;
             padding-bottom: 12rem;
         }
