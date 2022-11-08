@@ -42,16 +42,16 @@
 }
 .trademark-left {
     position: absolute;
-    left: -6%;
-    top: 3.5rem;
+    left: -2%;
+    top: 2.5rem;
     color: $main;
     font-size: 8rem;
     cursor: pointer;
 }
 .trademark-right {
     position: absolute;
-    top: 3.5rem;
-    right: -6%;
+    top: 2.5rem;
+    right: -2%;
     color: $main;
     font-size: 8rem;
     cursor: pointer;
@@ -277,6 +277,9 @@
         margin-top: 11.4rem;
         &-list{
             &__item {
+                &--link{
+                    width: 70%;
+                }
                 .margin-image-golfzon{
                     margin-top: 2.6rem;
                 }
@@ -430,5 +433,18 @@
     #myBtn{
         width: 3.5rem;
         height: 3.5rem;
+    }
+    .modal-map{ 
+        &-address{
+            &__close {
+                .close-icon {
+                    right: 2.5rem;
+                }
+            }
+            &__search{
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
     }
 }

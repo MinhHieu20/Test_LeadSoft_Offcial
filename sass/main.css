@@ -679,10 +679,10 @@ img {
   font-family: Roboto-Bold;
   line-height: 2.1rem;
   color: #fff;
-  transition: top linear 0.04s;
+  transition: 1s ease-in-out;
 }
 .service-navigation-list__item--link:hover {
-  top: -0.4rem;
+  transform: translateY(-0.8rem);
 }
 .service-navigation-list__item span {
   position: absolute;
@@ -701,7 +701,6 @@ img {
 
 .content-service-item {
   padding: 14.8rem 0 19.9rem;
-  width: 100% !important;
 }
 .content-service-item__box {
   display: flex;
@@ -1022,7 +1021,7 @@ img {
 }
 @media (min-width: 740px) and (max-width: 1023px) {
   .wrap-footer {
-    min-height: 80vh;
+    min-height: 85vh;
   }
 }
 @media (min-width: 360px) and (max-width:739px) {
@@ -1391,7 +1390,7 @@ img {
     position: relative;
   }
   .header-body-menu {
-    display: block;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -1409,7 +1408,7 @@ img {
     color: #FF9330;
   }
   .header-body-menu.show {
-    display: none;
+    display: block;
   }
   .header .navbar-mobile {
     display: block;
@@ -1425,12 +1424,12 @@ img {
   .header .mobile-menu-overlay {
     position: absolute;
     inset: 0;
-    display: block;
+    display: none;
     background: rgba(0, 0, 0, 0.5);
     z-index: 11;
   }
   .header .mobile-menu-overlay.show {
-    display: none;
+    display: block;
   }
   @-webkit-keyframes shownav {
     from {
@@ -1991,7 +1990,6 @@ img {
     display: none;
   }
   .content-service-item {
-    width: 48rem !important;
     padding: 14.8rem 0.8rem 0;
   }
   .content-service-item__info--heading {
@@ -2040,8 +2038,8 @@ img {
 
 .trademark-left {
   position: absolute;
-  left: -6%;
-  top: 3.5rem;
+  left: -2%;
+  top: 2.5rem;
   color: #FF9330;
   font-size: 8rem;
   cursor: pointer;
@@ -2049,8 +2047,8 @@ img {
 
 .trademark-right {
   position: absolute;
-  top: 3.5rem;
-  right: -6%;
+  top: 2.5rem;
+  right: -2%;
   color: #FF9330;
   font-size: 8rem;
   cursor: pointer;
@@ -2285,6 +2283,9 @@ img {
   .base-partner {
     margin-top: 11.4rem;
   }
+  .base-partner-list__item--link {
+    width: 70%;
+  }
   .base-partner-list__item .margin-image-golfzon {
     margin-top: 2.6rem;
   }
@@ -2425,5 +2426,12 @@ img {
   #myBtn {
     width: 3.5rem;
     height: 3.5rem;
+  }
+  .modal-map-address__close .close-icon {
+    right: 2.5rem;
+  }
+  .modal-map-address__search {
+    width: 90%;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=main.css.map */
