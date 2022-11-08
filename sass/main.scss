@@ -29,6 +29,9 @@
     }
     &-list {
         position: relative;
+        &__item{
+            text-align: center;
+        }
     }
 }
 .base-map {
@@ -234,10 +237,13 @@
         &-list{
             &__item {
                 .margin-image-golfzon{
-                    margin-top: 3rem;
+                    margin-top: 2.6rem;
                 }
                 .margin-image-unicidex{
-                    margin-top: 6.8em;
+                    margin-top: 6.3em;
+                }
+                .margin-image-aia{
+                    margin-top: 2.2rem;
                 }
             }
         }
@@ -266,17 +272,25 @@
 }
 @include responsive-tablet {
     .base-partner{
-        margin-top: 6.4rem !important;
-        margin-bottom: 16rem;
-        &-list__item{
+        margin: 10rem auto;
+        width: 80%;
+        &-list{
+            line-height: 17rem;
+            &__item{
             text-align: center;
+                &--link{
+                    width: 18rem;
+                }
+            }
         }
     }
     .trademark-left {
-        left: -3% !important;
+        left: -6% !important;
+        font-size: 6rem;
     }
     .trademark-right {
-        right: -3% !important;
+        right: -6% !important;
+        font-size: 6rem;
     }
 }
 @include responsive_mobile {
@@ -329,6 +343,15 @@
             text-align: center;
             &--link {
                 width: 14rem;
+            }
+        }
+        &-list{
+            line-height: 9rem;
+            &__item{
+                text-align: center;
+                &--link{
+                    width: 14rem;
+                }
             }
         }
     }
