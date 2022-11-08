@@ -1350,9 +1350,20 @@ img {
   }
 }
 @media (min-width: 360px) and (max-width:739px) {
+  .content-contact-banner__title {
+    padding-top: 6rem;
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
+  .content-contact-banner__sub {
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+  }
   .content-contact-box {
     padding: 6rem 3rem;
     width: 95%;
+    margin-top: 12rem;
   }
   .content-contact-box__name, .content-contact-box__company, .content-contact-box__email {
     margin-bottom: 2rem;
@@ -1378,6 +1389,12 @@ img {
   }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
+  .content-contact-banner__title {
+    padding-top: 6rem;
+  }
+  .content-contact-banner__sub {
+    width: 100%;
+  }
   .content-contact-box {
     padding: 6rem 3rem;
     width: 95%;
