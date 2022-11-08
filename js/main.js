@@ -269,7 +269,6 @@ $(document).ready(function(){
         }
       ]
     });
-
     var mybutton = $("#myBtn");
     var offSetTop = 100;
     $(window).scroll(function() {
@@ -306,27 +305,26 @@ $(document).ready(function(){
       } /* speed */ );
     });
 })
-
 var sliderBool = false,
-	  sliderBreakpoint = 739,
-	  sliderSettings = {
-    mobileFirst: true,
-    rows:2,
-    dots: true,
-    // autoplay:true,
-		responsive: [
-			{
-				breakpoint: sliderBreakpoint,
-				settings: "unslick"
-			}
-		]
-	};
+  sliderBreakpoint = 739,
+  sliderSettings = {
+  mobileFirst: true,
+  rows:2,
+  dots: true,
+  autoplay:true,
+	responsive: [
+		{
+      breakpoint: sliderBreakpoint,
+      settings: "unslick"
+		}
+	]
+};
 function sliderInit(sliderElem) {
 	if (window.innerWidth <= sliderBreakpoint) {
-		if (sliderBool == false) {
-			$("" + sliderElem + "").slick(sliderSettings);
-			sliderBool = true;
-		}
+    if (sliderBool == false) {
+      $("" + sliderElem + "").slick(sliderSettings);
+      sliderBool = true;
+    }
 	} else {
 		sliderBool = false;
 	}
@@ -335,5 +333,4 @@ sliderInit(".career-box");
 $(window).resize(function () {
 	sliderInit(".career-box");
 });
-
 AOS.init();
