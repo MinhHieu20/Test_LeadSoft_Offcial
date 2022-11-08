@@ -140,19 +140,31 @@ $(document).ready(function(){
     });
 
     $(".content-recruit-outside__btn").click(function(event){
-        $(".modal-recruit").addClass("visible");
-      });
-      
-      $(".modal-recruit-container__close").click(function(){
-        $(".modal-recruit").removeClass("visible");
-      });
-      
-      $(".modal-recruit").click(function() {
-        $(".modal-recruit").removeClass("visible");
-      });
-      $(".modal-recruit-container").click(function(event) {
-        event.stopPropagation();
+      $(".modal-recruit").addClass("visible");
     });
+    $(".modal-recruit-container__close").click(function(){
+      $(".modal-recruit").removeClass("visible");
+    });
+    $(".modal-recruit").click(function() {
+      $(".modal-recruit").removeClass("visible");
+    });
+    $(".modal-recruit-container").click(function(event) {
+      event.stopPropagation();
+    });
+
+    $(".content-recruit-outside__top--btn").click(function(event){
+      $(".modal-map").addClass("visible");
+    });
+    $(".js-modal-close").click(function(){
+      $(".modal-map").removeClass("visible");
+    });
+    $(".modal-map").click(function() {
+      $(".modal-map").removeClass("visible");
+    });
+    $(".modal-maps-address").click(function(event) {
+      event.stopPropagation();
+    });
+
     $('.js-moblie-navbar').click(function() { 
       $('.js-mobile-menu').toggleClass('show'); 
       $('.mobile-menu-overlay').toggleClass('show');  
@@ -178,7 +190,7 @@ $(document).ready(function(){
       prevArrow: true,
       responsive: [
         {
-          breakpoint: 769,
+          breakpoint: 1024,
           settings: {
             slidesToShow: 3,
             autoplaySpeed: 3000,

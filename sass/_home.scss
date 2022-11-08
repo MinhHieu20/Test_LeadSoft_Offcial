@@ -114,10 +114,10 @@
                         transform: translateY(-3rem);
                     }
                     .home-industries-body__list-item--heading {
-                        transform: translateY(-5.1rem);
+                        transform: translateY(-1.1rem);
                     }
                     p {
-                        margin-top: -5rem;
+                        margin-top: 1rem;
                         transition-delay: 0.2s;
                         opacity: 1;
                         visibility: visible;
@@ -184,7 +184,7 @@
             position: absolute;
             font-weight: 700;
             background-color: $white;
-            font-size: 2.4rem;
+            font-size: 2rem;
             a {
                 display: flex;
                 align-items: center;
