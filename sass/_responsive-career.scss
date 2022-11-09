@@ -1,7 +1,7 @@
-@include responsive_mobile {
+@include responsive_mobile{
     .content-recruit{
         padding: 0 1.5rem;
-        &-image {
+        &-image{
             right: -73rem;
             &__top{
                 width: 54.7rem;
@@ -69,7 +69,7 @@
 
 @include responsive-tablet{
     .content-recruit{
-        &-image {
+        &-image{
             right: -22rem;
         }
         &-title{
@@ -137,8 +137,8 @@
             }
             &__info{
                 width: 100%;
-                &--list {
-                    &-item {
+                &--list{
+                    &-item{
                         margin-bottom: 0.5rem;
                     }
                 }

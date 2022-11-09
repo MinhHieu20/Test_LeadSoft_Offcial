@@ -18,7 +18,7 @@
         &-image{
             width: 22.5rem;
             height: 2.9rem;
-            filter: drop-shadow(0 0.3rem 0.5rem rgba(255, 255, 255, 0.47));
+            filter: drop-shadow(0 0.3rem 0.5rem $color-rgba-footer);
         }
         &-describe{
             p{

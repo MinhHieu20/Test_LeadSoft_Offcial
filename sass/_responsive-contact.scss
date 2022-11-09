@@ -1,5 +1,4 @@
 @include responsive-mobile{
-
     .content-contact-banner{
         &__wrap{
             &--title{
@@ -40,6 +39,7 @@
         &-name{
             margin-top: 1rem;
             margin-bottom: 1.2rem;
+            min-height: 0;
         }
     }
     .box-center-item{
@@ -72,6 +72,11 @@
         }
         &__mobile{
             display: none;
+        }
+    }
+    .contact-industries{
+        &-name{
+            min-height: 0;
         }
     }
     .box-center-item{
