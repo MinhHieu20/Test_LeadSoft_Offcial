@@ -194,7 +194,7 @@
       
     }
 }
-@include responsive_mobile {
+@include responsive_mobile{
     .header{
         &-body{
             &-logo{
@@ -208,7 +208,7 @@
             margin-left: 10.5%;
             font-size: 1.4rem;
             display: none;
-            &__image {
+            &__image{
                 width: 2.2rem;
                 height: 2.2rem;
                 margin-left: 0.8rem;
@@ -242,7 +242,7 @@
                         &--right{
                             width: 80%;
                             font-size: 1.8rem;
-                            &-text {
+                            &-text{
                                 margin-bottom: 4.7rem;
                             }
                         }
@@ -251,7 +251,7 @@
             }
         }
         .home-industries{
-            &-image {
+            &-image{
                 padding: 9% 0 9%;
             }
             &-body{
@@ -339,7 +339,7 @@
                 &__list{
                     display: block;
                     padding-bottom: 7.8rem;
-                    &-item {
+                    &-item{
                         .count{
                             font-size: 3rem;
                         }
@@ -370,57 +370,58 @@
                 }
             }
         }
-      
     }
 }
-@include responsive_pc {
-.banner-home{
-    &-outside {
-        &__image1,
-        &__image2{
-            height: 84.4rem;
+@include responsive_pc{
+    .banner-home{
+        &-outside {
+            &__image1,
+            &__image2{
+                height: 84.4rem;
+            }
         }
-    }
-    &-heading{
-        margin-left: 10.5%;
-        bottom: 45.7rem;
-        font-size: 6rem;
-        line-height: 7rem;
-    }
-    &-text{
-        margin-left: 10.5%;
-        bottom: 40.9rem;
-    }
-    &-btn {
-        font-size: 2.4rem;
-        padding: 1rem 1.3rem;
-        margin-left: 10.5%;
-        bottom: 30.5rem;
-        &__image{
-            width: 3.2rem;
-            height: 3.2rem;
-            margin-left: 0.8rem;
+        &-heading{
+            margin-left: 10.5%;
+            bottom: 45.7rem;
+            font-size: 6rem;
+            line-height: 7rem;
         }
-    }
-    .slick-dots{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-left: 3.2rem;
-        li{
-            margin: 0.5rem 0;
+        &-text{
+            margin-left: 10.5%;
+            bottom: 40.9rem;
         }
-    }
-    .slick-dots{
-        button{
-            display: block;
-            width: 1rem;
-            height: 1rem;
-            padding: 0;
-            border: none;
-            border-radius: 100%;
-            background-color: $slick-dots;
-            text-indent: -999.9rem;
+        &-btn{
+            font-size: 2.4rem;
+            padding: 1rem 1.3rem;
+            margin-left: 10.5%;
+            bottom: 30.5rem;
+            &__image{
+                width: 3.2rem;
+                height: 3.2rem;
+                margin-left: 0.8rem;
+            }
+        }
+        .slick-dots{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 3.2rem;
+            li{
+                margin: 0.5rem 0;
+            }
+            li.slick-active button {
+                background-color: $slick-dots-active;
+            }
+            button{
+                display: block;
+                width: 0.6rem;
+                height: 0.6rem;
+                padding: 0;
+                border: none;
+                border-radius: 100%;
+                background-color: $slick-dots;
+                overflow:hidden
+            }
         }
     }
 }
@@ -460,7 +461,7 @@
             }
             &__list{
                 padding: 7.5rem 0 0;
-                &-item {
+                &-item{
                     height: 32rem;
                     width: 100% !important;
                     &--image{
@@ -557,5 +558,4 @@
     .base-map{
         margin-top: 10rem;
     }
-}
 }

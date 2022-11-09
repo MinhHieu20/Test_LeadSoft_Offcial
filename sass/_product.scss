@@ -1,9 +1,9 @@
 @import 'variables';
-.base-banner {
-    .banner-product {
+.base-banner{
+    .banner-product{
         &-text,
         &-heading,
-        &-info {
+        &-info{
             position: absolute;
             color: $white;
             font-family: Roboto-Regular;
@@ -11,24 +11,24 @@
             top: 50%;
             transform: translateY(-50%);
         }
-        &-text {
+        &-text{
             font-size: 2.8rem;
             line-height: 2.8rem;
             margin-top: -6.2rem;
         }
-        &-heading {
+        &-heading{
             font-size: 4.2rem;
             line-height: 4.9rem;
             text-transform: uppercase;
         }
-        &-info {
+        &-info{
             font-size: 2.4rem;
             line-height: 2.8rem;
             margin-top: 6.2rem;
         }
     }
 }
-.content-product {
+.content-product{
     .product-outside{
         margin: 11rem 0 10.4rem;
         font-family: Roboto-Bold;
